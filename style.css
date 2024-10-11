@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+  
+  .navbar .cta {
+    background-color: #6a0dad;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('aduhh.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #6a0dad, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 2s ease-in-out 1s;
+  }
+  
+  .hero .cta-buttons button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .hero .cta-buttons .primary {
+    background-color: #6a0dad;
+    color: #fff;
+  }
+  
+  .hero .cta-buttons .primary:hover {
+    background-color: #5a00c1;
+    transform: scale(1.1);
+  }
+  
+  .hero .cta-buttons .secondary {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .hero .cta-buttons .secondary:hover {
+    background-color: #444;
+    transform: scale(1.1);
+  }
+  
+  .features, .clients, .pricing, .footer {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #0d0d0d;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .features h2, .clients h2, .pricing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInDown 2s ease -in-out;
+  }
+  
+  .features .feature-list, .clients .client-list, .pricing .pricing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .features .feature-item, .clients .client-item, .pricing .pricing-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .features .feature-item img, .clients .client-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .features .feature-item h3, .clients .client-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .features .feature-item p, .clients .client-item p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .pricing .pricing-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .pricing .pricing-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .pricing .pricing-item .price {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .pricing .pricing-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .pricing .pricing-item li {
+    margin-bottom: 10px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .pricing .pricing-item button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .pricing .pricing-item button:hover {
+    background-color: #5a00c1;
+    transform: scale(1.1);
+  }
+  
+  .footer {
+    background-color: #000;
+    padding: 20px 50px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .footer .footer-content div {
+    margin: 10px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .footer .footer-content h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  .footer .footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
